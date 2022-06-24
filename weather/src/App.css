@@ -1,3 +1,38 @@
 .App{
-  color:  blue;
+  color:  white;
+  background-image: url(/src/images/Background.png);
+  height: 100vh;
+}
+
+body{
+  /*сделали стр непрокручиваемой*/
+  overflow: hidden;
+}
+
+.current{
+  text-align: center;
+  padding: 64px;
+}
+.currentCity{
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 47px;
+  letter-spacing: 0px;
+}
+.currentTemp{
+  font-family: Roboto;
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 125px;
+  letter-spacing: 0px;
+
+}
+.currentInfo{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0px;
+
 }
