@@ -81,21 +81,30 @@ function App() {
           <div className = "currentInfo">{cloudInfo}</div>
 
           {/*
-          <p><a href="lorem.html"><img src="/src/images/Rectangle1.png" /></a></p>
+          <p><a ><img src="/src/images/Rectangle1.png" /></a></p>
           */}
         </div>
 
         {/*Детали*/}
-        <div class = "details">
+         <div className = "details">
           <p>Подробности</p>
-          <div>По ощущениям</div> {Math.round(feelsLike)}°
-          <div>Влажность</div> {humidity}%
+          <div className='feelsLike'>По ощущениям</div> {Math.round(feelsLike)}° 
+          <div>Влажность</div> {humidity}% 
           <div>Видимость</div> {(visibility)/1000} км
-          <div>Восход</div> 
+          <div>Восход</div>
           <div>Давление</div> {pressure} мм
           <div>Ветер</div> {windSpeet} м/с
           <div>Закат</div>
-        </div>
+         </div>
+
+          <table border="1px">
+            <tr>
+              <td>По ощущениям{Math.round(feelsLike)}°</td>
+              <td>Влажность {humidity}%</td>
+              <td>Видимость {(visibility)/1000} км</td>
+              <td>Восход</td>
+            </tr>
+          </table>
 
 
       </div>
