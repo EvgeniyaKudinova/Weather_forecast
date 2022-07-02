@@ -86,7 +86,7 @@ function App(props) {
         {/*Текущее*/}
         <div className="current">
           <div className = "currentCity">Димитровград</div>
-          <div className = "currentTemp"><img src={cloudIcon} width="125" height="125"></img>{Math.round(cloudTemp)}°</div>
+          <div className = "currentTemp"><img src={cloudIcon} width="100" height="100"></img>{Math.round(cloudTemp)}°</div>
           <div className = "currentDescription">{cloudDescription}</div>
         </div>
 
