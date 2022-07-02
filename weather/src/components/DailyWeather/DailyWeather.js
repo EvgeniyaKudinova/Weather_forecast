@@ -21,7 +21,7 @@ function DailyWeather({dailyWeather}) {
           {dailyWeather.map((day) => {
           return <DayWeather
             key={day.dt} //особенность реакта
-            day = {day.dt}
+            dt = {day.dt}
             icon = {day.weather[0].icon}
             tempDay = {day.temp.day}
             tempNight = {day.temp.night}

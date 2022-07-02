@@ -48,7 +48,7 @@ function App(props) {
           /*выводим все то, что получили с url адреса*/
           console.log("Данные, которые получены в формате json",data);
           setcloudTemp(data.daily[0].temp.day)
-          setcloudIcon('http://openweathermap.org/img/w/' + data.daily[0].weather[0].icon + '.png')
+          setcloudIcon('http://openweathermap.org/img/wn/' + data.daily[0].weather[0].icon + '@2x.png') /*2х - четче становится картинка*/
           setDescription(data.daily[0].weather[0].description) /*получаем пасмурно, облачно ...*/
 
           //достает из данных дни
@@ -86,7 +86,7 @@ function App(props) {
         {/*Текущее*/}
         <div className="current">
           <div className = "currentCity">Димитровград</div>
-          <div className = "currentTemp"><img src={cloudIcon} width="87" height="87"></img>{Math.round(cloudTemp)}°</div>
+          <div className = "currentTemp"><img src={cloudIcon} width="125" height="125"></img>{Math.round(cloudTemp)}°</div>
           <div className = "currentDescription">{cloudDescription}</div>
         </div>
 
