@@ -1,0 +1,22 @@
+.DailyWeather{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.DailyWeather_title{
+    width: 100%;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.DayList{
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+}
