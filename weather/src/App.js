@@ -52,7 +52,7 @@ function App(props) {
           setDescription(data.daily[0].weather[0].description) /*получаем пасмурно, облачно ...*/
 
           //достает из данных дни
-          //setdailyWeather(data.daily)
+          setdailyWeather(data.daily)
 
           //setcloudCity(data.name)
           /*setfeelsLike(data.main.feels_like)
@@ -78,7 +78,7 @@ function App(props) {
       }
       //вызов функции
       gettingWeather()
-    })
+    }, [] )
 
     
     return (
