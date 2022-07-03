@@ -1,0 +1,88 @@
+.thisDay_details{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.sunSvg1{
+    border-radius: 8px;
+    padding-left: 64px;
+}
+
+.sunSvg2{
+    border-radius: 8px;
+    padding-left: 80px;
+}
+
+.detailsInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.detailsInfo{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-right: 52px;
+
+}
+
+#detailsInfo_title{
+    padding-left: 64px;
+    padding-top: 16px;
+}
+
+#info{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 64px;
+    padding-top: 16px;
+}
+
+.detailsDayText{
+    display: flex;
+    flex-direction: row;
+}
+
+.rowInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.sunrise{
+    display: flex;
+    flex-direction: column;
+}
+
+.sunset{
+    display: flex;
+    flex-direction: column;
+}
+
+#infoSunTime{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 27px;
+}
+
+.sunInfo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    padding-top: 16px;
+}

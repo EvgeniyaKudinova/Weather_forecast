@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import DailyWeather from './components/DailyWeather/DailyWeather';
+import DailyWeather from './components/DailyWeather/DailyWeather.js';
+import Details from './components/Details/Details.js';
 
 /*Создаем переменные для API*/
 /*ключ с сайта*/
@@ -23,6 +24,7 @@ function App(props) {
 
   
   const [dailyWeather, setdailyWeather] = useState([]);
+  const [details, setdetails] = useState([]);
   
   //const [cloudCity, setcloudCity] = useState("---------");
  
@@ -53,6 +55,7 @@ function App(props) {
 
           //достает из данных дни
           setdailyWeather(data.daily)
+          setdetails(data.current)
 
           //setcloudCity(data.name)
           /*setfeelsLike(data.main.feels_like)
@@ -91,6 +94,7 @@ function App(props) {
         </div>
 
         <DailyWeather dailyWeather = {dailyWeather} />
+        <Details details = {details} />
 
          {/*<SunSvg />*/}
 
