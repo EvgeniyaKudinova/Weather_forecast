@@ -9,9 +9,11 @@ const API_key = '599826b9e3c9c9280bcf4fd0e558d925'
 const lat = '54.213860'
 const lon = '49.618378'
 
+// Необходимо убирать ненужный код
 //const API = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}&units=metric&lang=ru`
 //формируем get запрос
 const API = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${API_key}&lang=ru&units=metric`
+// Необходимо убирать лишнее логирование
 console.log(API)
 
 
@@ -25,7 +27,7 @@ function App(props) {
   
   const [dailyWeather, setdailyWeather] = useState([]);
   const [details, setdetails] = useState([]);
-  
+  // Мусор 
   //const [cloudCity, setcloudCity] = useState("---------");
  
 

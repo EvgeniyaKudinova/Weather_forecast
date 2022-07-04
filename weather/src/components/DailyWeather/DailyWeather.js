@@ -7,7 +7,9 @@ function DailyWeather({dailyWeather}) {
     const firstDay = dailyWeather[0]
     console.log(firstDay)
 
-    //если пусто, то мы не возвращаем jsx разметку, а возв. 0
+    //если пусто, то мы не возвращаем jsx разметку, а возв. 0      
+    // Лучше делать проверку по длине массива 
+     // if (dailyWeather.length) {
     if(firstDay === undefined){
       return null
     }

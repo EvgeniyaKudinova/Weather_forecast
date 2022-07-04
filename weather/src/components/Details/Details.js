@@ -1,12 +1,15 @@
 import React from 'react';
 import './index.css'
-import { ReactComponent as SunSvg1 } from './Line1.svg';
+import { ReactComponent as SunSvg1 } from './Line1.svg'; // Все свг файлы в images/icons 
 import { ReactComponent as SunSvg2 } from './Line2.svg';
 import { ReactComponent as WindSpeed } from './Wind.svg';
 import { ReactComponent as Sunrise } from './Sunrise.svg';
 import { ReactComponent as Sunset } from './Sunset.svg';
 
 function Details({details}){
+
+    // Лучше использовать деструктуризацию. Так ведь намного читаемее? 
+    // const { feelsLike, humidity, visibility, pressure, speedWind, sunrise, sunset } = details
 
     const feelsLike = details.feels_like
     const humidity = details.humidity
@@ -24,6 +27,7 @@ function Details({details}){
         <div className='details'>
             <span className='thisDay_details'>Подробности</span>
             <div className='details_Line'>
+                {/* Оборачивать SVG  в span излишне */}
                 <span className='sunSvg1'><SunSvg1 /></span>
                 <span className='sunSvg2'><SunSvg2 /></span>
             </div>
@@ -31,6 +35,7 @@ function Details({details}){
                 <div>
                     <div className='detailsDayText'>
                         <div className='detailsInfo'>
+                            {/* лучше стилизовать через className, чем через id */}
                             <span id='detailsInfo_title'>По ощущениям</span>
                             <span id='info'>{Math.round(feelsLike)}°</span>
                         </div>
@@ -84,7 +89,7 @@ function Details({details}){
 
 export default Details;
 
-
+// Мусор
 /* current: {dt: 1656841590, sunrise: 1656807223, sunset: 1656868642, temp: 23.43, feels_like: 23.03,…}
 clouds: 5
 dew_point: 11.16
