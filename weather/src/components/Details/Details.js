@@ -54,7 +54,7 @@ function Details({details}){
 
                         <div className='detailsInfo'>
                             <span id='detailsInfo_title'>Ветер</span>
-                            <span id='info'><WindSpeed />{Math.round(speedWind)} м/с</span>
+                            <span id='info'><WindSpeed /> {Math.round(speedWind)} м/с</span>
                         </div>
                     </div>
                 </div>
